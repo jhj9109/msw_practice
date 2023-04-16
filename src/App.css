@@ -14,6 +14,12 @@
 }
 
 .bottom-section {
-  height: 50vh;
   background-color: #a5a5a5;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #0641b7;
 }
