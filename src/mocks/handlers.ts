@@ -24,7 +24,7 @@ const handlers = [
 
     return res(
       ctx.status(200),    // Http status code
-      ctx.delay(1000),    // Delay time to response
+      ctx.delay(500),    // Delay time to response
       ctx.json({          // Resoponse body
         items: [
           { name: "product-1" },

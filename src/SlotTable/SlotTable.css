@@ -1,0 +1,52 @@
+:root {
+    --main-theme-color: #02c4c7;
+}
+
+.tableContainer {
+    width: 100%;
+}
+
+.slotTable {
+    color: var(--main-theme-color);
+    width: 100%; /* 양옆 꽉차도록 */
+    border-collapse: collapse; /* 보더간 경계는 하나 */
+    border: '0.0625rem gray solid'; /* 테이블테두리 */
+    border-spacing: 0px, /* 셀간 간격 */
+    /* nowrap으로 인해 칸의 크기가 변형 되어서 삭제 => 차라리 줄 바꿈이 나음 */
+}
+
+.tableHeader {
+    border: 0.0625rem #ddd solid;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tableBody {
+    height: 3vh;
+}
+
+.rowHeader {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    width: 19.5%;
+    padding: 0.0625rem 0.5rem;
+    border: 0.0625rem #ddd solid;
+}
+
+.tile {
+    border: 0.0625rem #ddd solid;
+    width: 11.5%;
+}
+
+.tile.elapsed {
+    background-color: gray;
+}
+
+.tile.slot {
+    background-color: #02c4c7;
+}
+
+.tile.selected {
+    background-color: blue;
+}
